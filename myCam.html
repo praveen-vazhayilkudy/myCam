@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script src="myCamJs.js"></script>
+    </head>
+    <body>
+        <video id="video" style="border: 1px solid #000;"></video>
+        <button class="button is-hidden" id="btnPlay" onclick="myCam.init()">Start</button>
+        <button class="button is-hidden" id="btnPlay" onclick="myCam.play()">
+            <span class="icon is-small">
+              <i class="fas fa-play"></i>
+            </span>
+          </button>
+          <button class="button" id="btnPause" onclick="myCam.pause();">
+            <span class="icon is-small">
+              <i class="fas fa-pause"></i>
+            </span>
+          </button>
+        <canvas style="border: 1px solid #000;" class="is-hidden" id="canvas"></canvas>
+    </body>
+</html>
+
+<video autoplay id="video"></video>
